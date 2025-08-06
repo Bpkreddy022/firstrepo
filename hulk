@@ -1,0 +1,32 @@
+# This program greets the user and performs a simple calculation.
+
+# 1. Print a welcome message
+print("Welcome to the Python Sample Program!")
+
+# 2. Get user's name as input
+name = input("What is your name? ")
+
+# 3. Greet the user using their name
+print(f"Hello, {name}!")
+
+# 4. Get two numbers from the user
+try:
+    num1 = float(input("Enter the first number: "))
+    num2 = float(input("Enter the second number: "))
+except ValueError:
+    print("Invalid input. Please enter numbers only.")
+    exit() # Exit the program if input is not a number
+
+# 5. Perform a simple addition and display the result
+sum_result = num1 + num2
+print(f"The sum of {num1} and {num2} is: {sum_result}")
+
+# 6. Demonstrate a conditional statement
+if sum_result > 10:
+    print("That's a relatively large sum!")
+elif sum_result == 10:
+    print("The sum is exactly ten.")
+else:
+    print("The sum is relatively small.")
+
+print("Thank you for using the sample program!")
